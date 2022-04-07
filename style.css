@@ -1,0 +1,142 @@
+:root {
+    --bg1: #123456;
+    --bg2: #112233;
+    --bg3: #aabbcc;
+    --shadow: #fff;
+    --sarga: #fdb913;
+    --border: #0007;
+    --keret: #fdb913;
+    --buttonbg: #123456;
+    --width-vw: 100vw;
+    --height-vh: 100vh;
+}
+
+body{
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-family: 'Parisienne', cursive;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg1);
+    /* background-image: linear-gradient(116deg, var(--bg1), var(--bg2)); */
+}
+
+main{
+    width: 800px;
+    margin: 0 auto;
+    margin-top: 30px;
+    padding: 5px 10px 10px 10px;
+    background-color: var(--bg3);
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px var(--shadow);
+}
+/* 2 képernyő */
+@media (max-width: 870px) {
+    main{
+        width: 500px;
+    }
+}
+/* 3 képernyő */
+@media (max-width: 550px) {
+    main{
+        width: 400px;
+    }
+}
+
+h1{
+    color: black;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+h2{
+    display: inline-block;
+    color: var(--sarga);
+    text-shadow: 1px 1px #000d;
+    margin: 0;
+    padding: 0;
+    margin-right: 160px;
+}
+
+p{
+    margin: 10 0;
+    padding: 0;
+}
+
+#menu{
+    margin: 0 auto;
+    width: 400px;
+    text-align: center;
+}
+#menu p{
+    text-align: left;
+}
+
+.buttonbox{
+    display: inline-block;
+    width: 50px;
+    height: 25px;
+    text-align: center;
+    color: white;
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: var(--buttonbg);
+    border-radius: 10px;
+}
+    .buttonbox a:link, .buttonbox a:visited, .buttonbox a:active, .buttonbox a:hover{
+    color: white;
+    text-decoration: none;
+    }
+    .buttonbox a:hover{
+        color: var(--sarga);
+    }
+
+#board-div{
+    display: grid;
+    margin: 0 auto;
+    width: 400px;
+    background-color:cadetblue;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    border: 1px solid var(--border);
+    margin-bottom: 20px;
+}
+
+.box-div{
+    display: inline-block;
+    box-sizing: border-box;
+    width: 80px;
+    height: 80px;
+    margin: 0;
+    padding: 0;
+    background-size:100%;
+    border: 1px solid var(--border);
+    text-align: center;
+    padding-top:8px;
+}
+
+#rebox{
+    width: auto;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    min-height: 20px;
+}
+
+.keret{
+    border: 1px solid var(--keret);
+}
+
+.iksz {
+    background-image: url('img/iksz.svg');
+}
+
+.kor {
+    background-image: url('img/kor.svg');
+}
+
+.color {
+    background-color: #fdb913;
+}
